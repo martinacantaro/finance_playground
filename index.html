@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>LambdaClass Finance Playground</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://edwardtufte.github.io/tufte-css/tufte.css">
+
+  </head>
+  <body>
+    <article>
+      <p><a href="https://mybinder.org/v2/gh/lambdaclass/finance_playground/master"><img src="https://mybinder.org/badge_logo.svg" alt="Binder" /></a> <a href="https://travis-ci.org/lambdaclass/finance_playground"><img src="https://travis-ci.org/lambdaclass/finance_playground.svg?branch=master" alt="Build Status" /></a></p>
+      <h1 id="finance-playground">Finance Playground</h1>
+      <p><br></br></p>
+      <blockquote>
+      <p class="quotation">
+      <span class="first-letter">U</span>ncertainty must be taken in a sense radically distinct from the familiar notion of Risk, from which it has never been properly separated…. The essential fact is that ‘risk’ means in some cases a quantity susceptible of measurement, while at other times it is something distinctly not of this character; and there are far-reaching and crucial differences in the bearings of the phenomena depending on which of the two is really present and operating…. It will appear that a measurable uncertainty, or ‘risk’ proper, as we shall use the term, is so far different from an unmeasurable one that it is not in effect an uncertainty at all
+      <footer>
+      — <b>Frank Knight</b>
+      </footer>
+      </blockquote>
+      <p>In this project our aim is to explore and analyse financial instruments (stocks and options in particular) and to develop profitable trading strategies. To that end, we focused on the relation between price time series and factors such as market volatility, interest rates, and various economic indicators.<br />
+      We started this as a learning tool. As developers, we advocate a hands on approach, we like trying out ideas and tinkering with models. If that sounds at all interesting, you can follow our progress which will be documented in Jupyter notebooks <a href="https://mybinder.org/v2/gh/lambdaclass/finance_playground/master">here</a>.</p>
+      <p>Collaboration is welcome: by all means, if you spot a mistake or just want to add an interesting notebook you’ve been playing with, please submit a pull request.</p>
+      <h2 id="notebooks">Notebooks</h2>
+      <ul>
+      <li><a href="https://lambdaclass.com/finance_playground/intro_finance">Introduction to Finance</a> -Basic concepts in Finance (stocks, ETFs, options) [<a href="https://lambdaclass.com/finance_playground/intro-finance.slides.html">slides</a>]</li>
+      <li><a href="https://lambdaclass.com/finance_playground/diversification_dalio_holy_grail">The Holy Grail of Investing</a> - On Ray Dalio’s insights into the benefits of <a href="https://www.investopedia.com/video/play/ray-dalio-his-portfolio-holy-grail/">diversification</a>.</li>
+      <li><a href="https://lambdaclass.com/finance_playground/ergodicity_explorations">Ergodicity Explorations</a> - Based on the <a href="https://ergodicityeconomics.com/lecture-notes/">research</a> from Professor Ole Peters regarding <a href="https://arxiv.org/abs/1507.04655">insurance</a> contracts, expectation values and time averages.</li>
+      <li><a href="https://lambdaclass.com/finance_playground/evaluating_gambles">Evaluating Gambles</a> - Continuing on our explorations on how to evaluate gambles and optimal betting criteria. [<a href="https://lambdaclass.com/finance_playground/ergodicity/evaluating-gambles-presentation.slides.html">slides</a>]</li>
+      <li><a href="https://lambdaclass.com/finance_playground/emergence_of_cooperation">Emergence of Cooperation in Evolutionary Systems</a> - An ergodic explanation for the advantage of <a href="https://arxiv.org/abs/1506.03414">cooperation</a> under evolutionary dynamics.</li>
+      <li><a href="https://lambdaclass.com/finance_playground/ergodicity/RGBM.html">Re-allocating GBM wealth distribution model</a> - Model simulation based on a <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2794830">paper</a> by Adamou, Bernam and Peters 2019. You can also try out this <a href="https://lambdaclass.com/finance_playground/rgbm_animation/index.html">interactive animation</a>.</li>
+      <li><a href="https://lambdaclass.com/finance_playground/troubled_markets_and_volatility">Troubled Markets</a> - An exploration on Argentina’s ADRs recent performance (2019) [<a href="https://lambdaclass.com/finance_playground/options/0.6-troubled-markets-and-volatility.slides.html">slides</a>]</li>
+      <li><a href="https://lambdaclass.com/finance_playground/metadata-2019/soy-price-prediction.html">2019 Metadata Forcasting Competition</a> - Our entry to the 2019 soy price forecasting competition organized by <a href="http://www.fundacionsadosky.org.ar">Fundación Sadosky</a>.</li>
+      </ul>
+      <h2 id="data-sources">Data sources</h2>
+      <h3 id="exchanges">Exchanges</h3>
+      <ul>
+      <li><a href="https://iextrading.com/developer/">IEX</a></li>
+      <li><a href="http://www.cboe.com/delayedquote/quote-table-download">CBOE Options Data</a></li>
+      </ul>
+      <h3 id="historical-data">Historical Data</h3>
+      <ul>
+      <li><a href="https://api.tiingo.com/">Tiingo</a></li>
+      <li><a href="http://www.sharadar.com">Sharadar</a></li>
+      <li><a href="https://www.quandl.com/">Quandl</a></li>
+      <li><a href="https://intrinio.com/">Intrinio</a></li>
+      <li><a href="http://www.xignite.com/">Xignite</a></li>
+      <li><a href="http://www.econ.yale.edu/~shiller/data.htm">Shiller’s US Stocks, Dividends, Earnings, Inflation (CPI), and long term interest rates</a></li>
+      <li><a href="http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html">Fama/French US Stock Index Data</a></li>
+      <li><a href="https://fred.stlouisfed.org">FRED CPI, Interest Rates, Trade Data</a></li>
+      <li><a href="https://www.reit.com/data-research/reit-market-data/reit-industry-financial-snapshot">REIT Data</a></li>
+      <li><a href="https://eur.figshare.com/articles/Data_Treasury_Bond_Return_Data_Starting_in_1962/8152748">Historical Data: International monthly government bond returns</a></li>
+      <li><a href="https://www.mdpi.com/2306-5729/4/3/91">Treasury Bond Return Data Starting in 1962</a></li>
+      <li><a href="https://www.credit-suisse.com/about-us-news/en/articles/news-and-expertise/global-investment-returns-yearbook-201902.html">The 2019 Global lnvestment Returns Yearbook: 119 years of financial history and analysis</a></li>
+      <li><a href="https://www.rofex.com.ar/cem/Fyo.aspx">Centro de Estadísticas de Mercado - ROFEX</a></li>
+      </ul>
+    </article>
+  </body>
+</html>
